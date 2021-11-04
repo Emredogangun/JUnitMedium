@@ -1,8 +1,9 @@
 import org.apache.log4j.Logger;
+import org.junit.Test;
 
 public class Log4j {
 
-    private static Logger Log = Logger.getLogger(Log4j.class.getName());
+    final static Logger Log = Logger.getLogger(Log4j.class);
 
     public static void startLog (String testClassName){
         Log.info("Test is Starting...");
@@ -36,5 +37,15 @@ public class Log4j {
     //Debug Level 
     public static void debug (String message) {
         Log.debug(message);
+    }
+    @Test
+    public void deneme() {
+
+        debug("Ben bir debug mesajiyim");
+        info("Ben bir info mesajiyim");
+        warn("Ben bir warn mesajiyim");
+        error("Ben bir error mesajiyim");
+        fatal("Ben bir fatal mesajiyim");
+
     }
 }
