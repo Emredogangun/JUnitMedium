@@ -43,7 +43,7 @@ public class Log4j {
         Log.debug(message);
     }
     @Test
-    public void deneme() {
+    public void tTest() {
         trace("Bu bir TRACE mesaji");
         debug("Bu bir DEBUG mesaji");
         info("Bu bir INFO mesaji");
