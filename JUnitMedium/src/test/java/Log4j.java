@@ -13,6 +13,10 @@ public class Log4j {
     public static void endLog (String testClassName){
         Log.info("Test is Ending...");
     }
+    //Trace Level 
+    public static void trace (String message) {
+        Log.trace(message);
+    }
 
     //Info Level 
     public static void info (String message) {
@@ -40,12 +44,12 @@ public class Log4j {
     }
     @Test
     public void deneme() {
-
-        debug("Ben bir debug mesajiyim");
-        info("Ben bir info mesajiyim");
-        warn("Ben bir warn mesajiyim");
-        error("Ben bir error mesajiyim");
-        fatal("Ben bir fatal mesajiyim");
+        trace("Bu bir TRACE mesaji");
+        debug("Bu bir DEBUG mesaji");
+        info("Bu bir INFO mesaji");
+        warn("Bu bir WARN mesaji");
+        error("Bu bir ERRROR mesajıi");
+        fatal("Bu bir FATAL mesajİ");
 
     }
 }
